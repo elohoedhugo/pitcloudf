@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#logindiv{
+  margin: 20px auto;
+  border-radius: 12px;
+  padding-top: 30px;
+  padding-inline: 35px;
+  width: 430px;
+  border: 2px solid rgb(234, 237, 242);
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+#logodiv{
+    display: block;
+    background-color: #000000;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0px auto;
+}
+
+#whitelogo{
+    width: 22px;
+    height: 22px;
+}
+
+.heading{
+    text-align: center;
+}
+
+#heading1{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#heading2{
+    margin-top: 6px;
+    font-weight: 350;
+    color: #5A5E66;
+    font-size: 13px;
+}
+
+#socialdiv{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    column-gap: 10px;
+}
+.icondiv{
+    height: 70px;
+    border-radius: 6px;
+    background-color: #FAFBFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .08);
+    cursor: pointer;
+    border: 1px solid #e5e6eb;
+}
+
+.icondiv:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
+}
+
+.icon{
+    width: 22px;
+    height: 22px;
+}
+
+#coinIcon{
+    width: 30px;
+    height: 30px
+}
+
+#hrdiv{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 29px;
+    margin-bottom: 15px;
+    color: #A0A3A8;
+    font-size: 12px;
+}
+
+.hr{
+    height: 1px;
+    width: 50%;
+    background-color: #C4C6CA;
+    
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(237, 238, 240) inset !important;
+  -webkit-text-fill-color: #5A5E66 !important;
+
+}
+.inputdiv{
+    margin-bottom: 25px;
+}
+
+#emailinputdiv{
+    position: relative;
+}
+
+.emailinputspan{
+    position: absolute;
+    color: blue;
+    left: 5%;
+    top: 10%;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#clearicon{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    cursor: pointer;
+}
+
+
+#passwordinputdiv{
+    position: relative;
+}
+.passwordinputspan{
+    position: absolute;
+    color: blue;
+    left: 5%;
+    top: 10%;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+.input{
+    background-color: rgb(237, 238, 240);
+    font-size: 16px;
+    color: rgb(160, 163, 168);
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    padding-inline: 16px;
+}
+
+.input.input-focused{
+    outline: none;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.input.input-has-text{
+    color: red;
+}
+
+.input.passwordinput-has-text{
+    color: red;
+}
+
+.input.input-valid{
+    border: none;
+    color: #5A5E66;
+}
+
+.error-text{
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    left: 2%;
+    bottom: -30%;
+}
+
+#eyeicondiv{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.eyeIcon{
+    width: 30px;
+    height: 20px;
+}
+
+.forgotP{
+    margin-top: 40px;
+    text-align: center;
+    color: #2C3461;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginbutton.inactive{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    color: #A0A3A8;
+    background-color: #D9DADD;
+}
+
+.loginbutton.active{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1A73E8;
+    color: white;
+    cursor: pointer;
+}
+
+/* #lastdiv{
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    justify-content: center;
+    margin-top: 15px;
+    color: #5A5E66;
+}
+
+#secondp{
+    cursor: pointer;
+    color: #2C3461;
+} */
+
+#secondbutton{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    color: #2d2e30;
+    background-color: #D9DADD;
+    cursor: pointer;
+}
+
+@media(max-width: 767px){
+  #logodiv{
+    display: none;
+  }
+}
+
+@media(max-width: 466px){
+  #logindiv{
+    width: 400px;
+  }
+}
+
+@media(max-width: 445px){
+  #logindiv{
+    width: 380px;
+  }
+}
+
+@media(max-width: 399px){
+  #logindiv{
+    width: 350px;
+  }
+}
+
+@media(max-width: 385px){
+  #logindiv{
+    width: 320px;
+  }
+}
+
+@media(max-width: 345px){
+  #logindiv{
+    width: 260px;
+  }
+}
+
+@media(max-width: 304px){
+  #logindiv{
+    width: 200px;
+  }
+}
